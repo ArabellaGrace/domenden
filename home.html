@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h2>BANNER</h2>
+</header>
+<div class="sidenav">
+  <a href="home.html">HOME</a>
+  <div class="dropdown">
+  <button class="dropbtn">PROFILE</button>
+  <div class="dropdown-content">
+    <a href="profile.html">Profile</a>
+    <a href="pictures.html">Pictures</a>
+    <a href="videos.html">Videos</a>
+  </div>
+  </div>
+  <a href="contacts.html">CONTACTS</a>
+  <a href="about.html">ABOUT</a>
+  <a href="news.html">NEWS</a>
+</div>
+
+<div class="main">
+  <h2>VISION</h2>
+  <p>A vibrant and nurturing Polytechnic Service College for transforming lives and communities.</p>
+  <p>Filipino: (Pangitain) Maningning at mapag-arugang politeknikong serbisyo-kolehiyo para sa pagpapaunlad ng buhay at lipunan..</p>
+  <p>Iloco: (Sirmata) Narimat ken managtaripato nga serbisyo-kolehiyo politekniko para ti pannakabalbaliw iti biag ken kagimongan.</p>
+  <h2>MISSION</h2>
+  <p>To improve the lives of people and communities through quality instruction, innovations, productivity, initiatives, environment and industry-feasible technologies, resource mobilization and transformational outreach programs and services.</p> 
+  <p>Filipino: Mapaunlad ang buhay ng tao at lipunan sa pamamagitan ng de-kalidad na pagtuturo, pagkamalikhain, panguguna sa pagiging produktibo, teknolohiyang pangkapaligiran at industria, tamang paggamit ng pinagkukunang yaman at mga program at serbisyong makapagbabago sa kabuhayan.</p>
+  <p>Iloco: Mapadur-as iti panagbiag dagiti tattao ken gimong babaen iti de-kalidad a panagisuro, panagpartuat, nabunga ken naballigi a gannuat, teknolohiya a mangsaluad iti aglawlaw ken iti industria, naikalintegan a panagusar dagiti pagbaknangan ken pannakaipaay iti programa ken serbisyo nga mangidanon iti panagbalbaliw.</p>
+	<p><a href="https://ispsc.edu.ph/about/vision-mission/">Visit ISPSC website</a></p>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+<footer>
+    <p>All Rights Reserved @ 2023</p>
+</footer>
+</html> 
